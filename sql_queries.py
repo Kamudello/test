@@ -22,8 +22,8 @@ def create_table(conn: Connection):
 
 def insert_student(conn: Connection, student: Student):
     query = """
-    INSERT INTO student_1 (name, lastname, clas, attendance, grades)
-    VALUES (:name, :lastname, :clas, :attendance, :grades);
+    INSERT INTO student_1 (name, lastname, clas, attendance, grade)
+    VALUES (:name, :lastname, :clas, :attendance, :grade);
     """
 
     conn.execute(

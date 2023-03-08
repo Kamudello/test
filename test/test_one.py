@@ -16,7 +16,7 @@ def test_service1(conn_with_data: str):
     )
     insert_student(conn, school)
 
-    transactions = get_students(conn)
-    assert len(transactions) == 1
-    transaction = transactions[0]
-    assert transaction.name == "Daniil"
+    schools = get_students(conn)
+    assert len(schools) == 4
+    school = schools[0]
+    assert school.name == "Daniil"

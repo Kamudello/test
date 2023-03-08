@@ -52,7 +52,7 @@ def update_students_bad(conn: Connection):
 
 
 def get_students(conn: Connection) -> list[Student]:
-    query = "SELECT * FROM transactions;"
+    query = "SELECT * FROM student_1;"
     print("ddd")
     students = conn.execute(text(query)).fetchall()
     print("ddd1")
